@@ -1,0 +1,30 @@
+---
+title: Image Classification Pipeline
+summary: End-to-end pipeline with advanced preprocessing and a probabilistic neural network classifier.
+date: 2024-04-15
+tags: [Python, OpenCV, Zernike, PNN]
+---
+
+## Overview
+Built a modular pipeline in Python for image classification. Focused on reliability and clean, production-style structure.
+
+## Context & Role
+- Internship @ Sunlux Technovations (6 months)
+- Role: ML Engineer — owned design, implementation, and evaluation
+
+## Problem
+Raw images were noisy, off-center, and cluttered — models underperformed.
+
+## Approach
+1. **Preprocessing**: noise reduction, clutter removal, centering, edge detection → 90%+ input standardization accuracy.
+2. **Feature engineering**: Zernike moments + statistical descriptors.
+3. **Model**: probabilistic neural network (PNN); validated multiple feature vectors.
+4. **Benchmarking**: accuracy, precision, recall, F1 → selected best-performing config.
+
+## Results
+- Up to **97% test accuracy** across datasets.
+- Faster iteration via modular components and consistent metrics.
+
+## What I'd improve next
+- Add data versioning and experiment tracking (DVC/MLflow).
+- Convert to an exportable package + minimal CLI.
