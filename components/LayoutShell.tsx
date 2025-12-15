@@ -26,7 +26,7 @@ export default function LayoutShell({ theme, children }: LayoutShellProps) {
         <div
             className={cn(
                 "min-h-screen w-full transition-colors duration-500",
-                isDark ? "bg-black text-white" : "bg-gray-50 text-gray-900"
+                isDark ? "bg-black text-white" : "bg-white text-gray-900"
             )}
         >
             {/* Background Effects */}
@@ -36,12 +36,12 @@ export default function LayoutShell({ theme, children }: LayoutShellProps) {
             <Sidebar theme={theme} />
 
             {/* Main Content Area */}
-            <main className="flex min-h-screen w-full flex-col md:pl-20">
+            <main className="min-h-screen w-full md:pl-20">
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
-                    className="relative mx-auto flex w-full max-w-6xl flex-col my-4 md:my-12 px-4"
+                    className="relative flex w-full flex-col"
                 >
                     {children}
                 </motion.div>

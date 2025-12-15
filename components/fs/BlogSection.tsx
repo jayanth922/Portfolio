@@ -57,18 +57,18 @@ export default function FSBlogSection() {
                                 whileHover={{ scale: 1.02, y: -4 }}
                                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
                             >
-                                <CardHeader>
-                                    <div className="flex justify-between items-center mb-2">
+                        <CardHeader>
+                            <div className="flex justify-between items-center mb-2">
                                         <Badge variant="secondary" className="bg-purple-500/20 text-purple-300 border-none group-hover:bg-purple-500/30 transition-colors">
                                             {blog.category}
                                         </Badge>
                                         <span className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">{blog.date}</span>
-                                    </div>
+                            </div>
                                     <CardTitle className="text-lg text-white group-hover:text-purple-400 transition-colors duration-300">
                                         {blog.title}
                                     </CardTitle>
-                                </CardHeader>
-                                <CardContent>
+                        </CardHeader>
+                        <CardContent>
                                     <p className="text-sm text-gray-300 mb-4 group-hover:text-gray-200 transition-colors">{blog.snippet}</p>
                                     <Link 
                                         href={blog.link} 
@@ -82,12 +82,12 @@ export default function FSBlogSection() {
                                         >
                                             <ArrowRight className="h-4 w-4 group-hover/link:translate-x-1 transition-transform" />
                                         </motion.span>
-                                    </Link>
-                                </CardContent>
+                            </Link>
+                        </CardContent>
                             </motion.div>
                             {/* Shine effect */}
                             <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-                        </Card>
+                    </Card>
                     </motion.div>
                 ))}
             </div>

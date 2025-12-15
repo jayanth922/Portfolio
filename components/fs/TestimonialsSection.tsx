@@ -45,7 +45,7 @@ export default function FSTestimonialsSection() {
                         transition={{ delay: index * 0.15, duration: 0.6 }}
                     >
                         <Card className="group bg-white/5 border-white/10 backdrop-blur-sm transition-all duration-300 hover:bg-white/10 hover:border-white/20 hover:shadow-lg hover:shadow-purple-500/20">
-                            <CardContent className="pt-6 relative">
+                        <CardContent className="pt-6 relative">
                                 <motion.div
                                     animate={{ rotate: [0, 5, -5, 0] }}
                                     transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
@@ -55,21 +55,21 @@ export default function FSTestimonialsSection() {
                                 <p className="text-gray-300 italic mb-6 relative z-10 pl-4 group-hover:text-gray-200 transition-colors">
                                     "{t.quote}"
                                 </p>
-                                <div className="flex items-center gap-3">
+                            <div className="flex items-center gap-3">
                                     <motion.div 
                                         className="h-10 w-10 rounded-full bg-purple-500/20 flex items-center justify-center text-purple-300 font-bold border border-purple-500/30 group-hover:bg-purple-500/30 group-hover:border-purple-500/50 transition-all"
                                         whileHover={{ scale: 1.1, rotate: 360 }}
                                         transition={{ duration: 0.5 }}
                                     >
-                                        {t.author[0]}
+                                    {t.author[0]}
                                     </motion.div>
-                                    <div>
+                                <div>
                                         <div className="font-semibold text-white group-hover:text-purple-300 transition-colors">{t.author}</div>
                                         <div className="text-xs text-gray-400 group-hover:text-gray-300 transition-colors">{t.role}</div>
-                                    </div>
                                 </div>
-                            </CardContent>
-                        </Card>
+                            </div>
+                        </CardContent>
+                    </Card>
                     </motion.div>
                 ))}
             </div>
